@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="active"><a href="./index.html" style="text-decoration:none">Home</a></li>
+
+                <li><a href="./sobre.html" style="text-decoration:none">Sobre</a></li>
+            </ul>
+            <ul>
+                <li><a href="./carrinho.html"><i data-feather="shopping-cart"></a></i></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <script src="https://unpkg.com/feather-icons"></script>
+            <script>
+                feather.replace()
+            </script>
+            <main>
+                <h2>Carrinho de Compras</h2>
+                <table id="tabela-carrinho">
+                    <thead>
+                        <tr>
+                            <th colspan="1"></th>
+                            <th class="mover">
+                                Itens para comprar
+                            </th>
+                            <th class="coluna-pequena">
+                                Quantidade
+                            </th>
+                            <th class="coluna-pequena">
+                                Preço
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="coluna-capa">
+                                <img src="https://images.lojanike.com.br/500x500/produto/95874_750708_20190703174813.png" class="capa">
+                            </td>
+                            <td>
+                                <div class="produto">
+                                    <a href="#" class="nome-produto">Air Max 97</a> -
+                                    <a href="#" class="nome-artista">Preto</a>
+                                </div>
+                                <strong class="estoque">Em estoque</strong>
+                                <div>
+                                    <label class="embalar"><input type="checkbox">Embalar para presente</label>
+                                </div>
+                                <a href="#" class="remover-carrinho">Tirar do Carrinho</a>
+                            </td>
+                            <td>
+                                <input type="number" value="1" min="0" max="10">
+                            </td>
+                            <td><span class="preco-produt0">R$ 799,99</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                Total da compra
+                            </td>
+                            <td>
+                                <span class="total">
+                                    R$ 799,99
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </main>
+</body>
+
+</html>

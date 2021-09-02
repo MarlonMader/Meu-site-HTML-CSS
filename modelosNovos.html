@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="modelosNovos.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="produto">
+        <div class="imagem-produto">
+            <a href="./index.html"><img id="image" src="https://images.lojanike.com.br/500x500/produto/95874_750708_20190703174813.png"></a>
+        </div>
+
+        <div class="apresentacao-conteudo">
+            <p class="marca">Nike</p>
+            <h1 class="description">Air Max 97 - Preto</h1>
+        </div>
+
+        <div class="price">
+            <span class="price-icon">R$: </span>
+            <h1 class="price-apresentation">799,99</h1>
+        </div>
+
+        <div class="colors">
+            <p>Cores:</p>
+            
+            <div class="mycolors">
+                <div class="buttons">
+                    <input type="button" id="foto1"  onclick="alterarFoto1();">
+                    <input type="button" id="foto2"  onclick="alterarFoto2();">
+                  
+                </div>
+
+
+            </div>
+        </div>
+
+            <div class="tamanhos">
+                <p>Tamanhos:</p>
+
+                <div class="meusTamanhos">
+                    <ul>
+                        <li class="tamanho1"><a href="#">37</a></li>
+                        <li class="tamanho2"><a href="#">38</a></li>
+                        <li class="tamanho3"><a href="#">39</a></li>
+                        <li class="tamanho4"><a href="#">40</a></li>
+                    </ul>
+                </div>  
+            </div>
+
+           <div class="finalizar-compra">
+               <div class="icons">
+                    <ul>
+                        <li class="icon1"><i data-feather="chevron-down"></i></li>
+                        <li class="icon2"><i data-feather="chevron-down"></i></li>
+                        <li class="icon3"><i data-feather="chevron-down"></i></li>
+                        <a href="./carrinho.html"><li class="icon4"><i data-feather="shopping-cart"></i></li></a>
+                    </ul>
+               </div>
+           </div> 
+
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+  
+        <script src="nike.js"></script>
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-shadow: 0.1em 0.1em 0.1em #dff;
+    line-height: 1.5em;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 70%;
+    background: red;
+    position: relative;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background: inherit;
+    overflow: hidden;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    padding: 0;
+}
+
+li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+@font-face{
+    font-family: JudasPriest;
+    src: url('../fontes/JudasPriest');
+}
+
+main{
+    width: 1140px;
+    margin: 0 auto;
+}
+h2{
+    color: #851616;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#tabela-carrinho{
+    width: 100%;  
+}
+#tabela-carrinho th, td{
+    padding: 0.5em;
+    border-bottom: #cdd 1px dotted;
+}
+#tabela-carrinho{
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+}
+#tabela-crrinho td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.coluna-pequena{
+    margin-left: 700px;
+}
+.nome-produto{
+    font-size: 1.2em;
+    color: #345986;
+    text-decoration: none;
+}
+.nome-artista{
+    color: #113157;
+    text-decoration: none;
+}
+.preco-produto, .total{
+    color: #cc4444;
+    font-weight: 500;
+}
+.remover-carrinho{
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.capa{
+    height: 7.5em;
+}
+.coluna-capa{
+    width: 8em;
+}
+.embalar{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+strong{
+    font-weight: bold;   
+}
+.estoque{
+    color: #5f1386;
+}
+.texto-total{
+    text-align: right;
+}
