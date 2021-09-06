@@ -61,12 +61,6 @@ li {
     align-items: center;
 }
 
-.active {
-    
-}
-
-
-
 
 .content {
     display: flex;
@@ -118,7 +112,7 @@ h4{
 .right {
     text-align: right;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 500px;
     color: #000;
 }
 
